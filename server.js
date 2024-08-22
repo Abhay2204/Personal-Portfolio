@@ -15,11 +15,13 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// MongoDB connection
-mongoose.connect('mongodb://localhost:27017/contact_form')
-    .then(() => console.log('Connected to MongoDB'))
-    .catch((err) => console.error('Failed to connect to MongoDB:', err));
-
+// MongoDB connection using Atlas
+mongoose.connect('mongodb+srv://abhaymallick2002:m1NbeiIa7fv2Le12@cluster0.jcq7f4m.mongodb.net/', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+    })
+    .then(() => console.log('Connected to MongoDB Atlas'))
+    .catch((err) => console.error('Failed to connect to MongoDB Atlas:', err));
 
 // Define Schema and Model
 const contactSchema = new mongoose.Schema({
@@ -49,7 +51,6 @@ app.post('/submit-form', (req, res) => {
         .then(() => res.send('Data saved successfully'))
         .catch((err) => res.status(500).send('Error saving data: ' + err.message));
 });
-
 
 // Start the server
 const PORT = process.env.PORT || 3000;
