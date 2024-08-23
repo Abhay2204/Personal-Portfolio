@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 // MongoDB connection using Atlas
-mongoose.connect('mongodb+srv://abhaymallick2002:m1NbeiIa7fv2Le12@cluster0.jcq7f4m.mongodb.net/', {
+mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster0.lvgj5.mongodb.net/', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })

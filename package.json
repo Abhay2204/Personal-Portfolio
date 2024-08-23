@@ -3,7 +3,6 @@
     "body-parser": "^1.20.2",
     "exceljs": "^4.4.0",
     "express": "^4.19.2",
-    "mongoose": "^8.5.3",
-    "xlsx": "^0.18.5"
+    "mongoose": "^8.5.3"
   }
 }
