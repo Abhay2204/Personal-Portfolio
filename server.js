@@ -12,11 +12,13 @@ app.use(express.static(path.join(__dirname)));
 
 // Serve index.html for the root route
 app.get('/', (req, res) => {
+    
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/contact_form')
+mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster1.lvgj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
+')
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('Failed to connect to MongoDB:', err));
 
