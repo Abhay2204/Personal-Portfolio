@@ -17,8 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // MongoDB connection
-mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster1.lvgj5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1
-')
+mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster1.lvgj5.mongodb.net/')
     .then(() => console.log('Connected to MongoDB'))
     .catch((err) => console.error('Failed to connect to MongoDB:', err));
 
