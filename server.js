@@ -17,10 +17,7 @@ app.get('/', (req, res) => {
 });
 
 // MongoDB connection using Atlas
-mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster0.lvgj5.mongodb.net/', {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+mongoose.connect('mongodb+srv://abhaymallick2002:8421822204@cluster0.lvgj5.mongodb.net/' 
     .then(() => console.log('Connected to MongoDB Atlas'))
     .catch((err) => console.error('Failed to connect to MongoDB Atlas:', err));
 
