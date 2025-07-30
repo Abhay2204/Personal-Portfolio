@@ -27,18 +27,12 @@ Welcome to my personal portfolio! This is a sleek, modern, and fully responsive 
 
 ---
 
-## 📸 Screenshots
-
-<!-- Replace with your screenshots -->
-| Home | Projects | Contact |
-|------|----------|---------|
-| ![Home Screenshot](screenshots/home.png) | ![Projects Screenshot](screenshots/projects.png) | ![Contact Screenshot](screenshots/contact.png) |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js / Vue.js / Next.js
+- **Frontend:**Html5
 - **Styling:** Tailwind CSS / CSS3 / SCSS / Styled Components
 - **Animations:** Framer Motion / AOS
 - **Deployment:** Vercel / Netlify / GitHub Pages
